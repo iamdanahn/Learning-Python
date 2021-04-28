@@ -48,3 +48,40 @@ print(47 // 8)         # => 5
 print(47 % 8)          # => 7
 print(47.0 // 8.0)     # => 5.0
 print(47.0 % 8.0)      # => 7.0
+
+
+### Comparison Ops
+Equality operators `< > >= <= == !=` 
+Logical operators `and`, `or`, `not` 
+Both are combined with comparisons for useful logic.
+
+* Equality operators process left to right BEFORE logical ops
+* Logical ops process 
+  1. not
+  2. and
+  3. or
+
+eg: 
+a = 4, b = 5
+print(not a == b)     # => True
+1. a == b     # False
+2. not False  # True
+VS
+print(a == not b)    # => SyntaxError
+== ops expects strings, numbers, Booleans or objects
+However, Logical ops causes error
+
+print (a == (not b))    # => False
+1. `not b` ==> `not True`           # False
+2. `a == False` ==> `True == False` # False
+
+# Short circuit
+When conditional expressions have definitive answer, it stops processing
+eg: 
+Expression	  Right side evaluated?
+True and  ...	Yes
+False and ...	No
+True or   ...	No
+False or  ...	Yes
+
+With this in mind, place fast functions to the left
