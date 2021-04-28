@@ -1,4 +1,24 @@
 # String data types
+Common methods:
+s = "Hello"	      s.upper()	          "HELLO"
+s = "Hello"	      s.lower()	          "hello"
+s = "Hello"	      s.islower()	        False
+s = "hello"	      s.islower()	        True
+s = "Hello"	      s.isupper()	        False
+s = "HELLO"	      s.isupper()	        True
+s = "Hello"	      s.startswith("He")	True
+s = "Hello"	      s.endswith("lo")	  True
+s = "Hello World"	s.split()	          ["Hello", "World"]
+s = "i-am-a-dog"	s.split("-")	      ["i", "am", "a", "dog"]
+isalpha()	
+  returns True if the string consists only of letters and is not blank.
+isalnum()	
+  returns True if the string consists only of letters and numbers and is not blank.
+isdecimal()	
+  returns True if the string consists only of numeric characters and is not blank.
+isspace()	
+  returns True if the string consists only of spaces, tabs, and newlines and is not blank.
+istitle()	returns True if the string consists only of words that begin with an uppercase letter followed by only lowercase letters.
 
 * Uses ' (single quotes) and " (double quotes) like JS
 To use both:
@@ -51,3 +71,12 @@ Eg:
   print("gold" + "fish")    # => goldfish
 `*` to multiply string
   print("s"*5)              # => sssss
+
+
+## Formatting
+Can use `"string".format()` or `f'string'` with place holders
+first_name = "Billy"
+last_name = "Bob"
+print('Your name is {0} {1}'.format(first_name, last_name))  # => Your name is Billy Bob
+
+print(f'Your name is {first_name} {last_name}')
