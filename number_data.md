@@ -85,3 +85,15 @@ True or   ...	No
 False or  ...	Yes
 
 With this in mind, place fast functions to the left
+
+
+# Identity Ops
+`is` and `is not` are STRICT comparators
+Similar to === in JS
+eg: 
+  print (2 == '2')    # => False
+  print (2 is '2')    # => False
+  print ("2" == '2')    # => True
+  print ("2" is '2')    # => True
+  print (2 == 2.0)    # => True
+  print (2 is 2.0)    # => False
