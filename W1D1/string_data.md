@@ -10,6 +10,7 @@ s = "Hello"	      s.startswith("He")	True
 s = "Hello"	      s.endswith("lo")	  True
 s = "Hello World"	s.split()	          ["Hello", "World"]
 s = "i-am-a-dog"	s.split("-")	      ["i", "am", "a", "dog"]
+
 isalpha()	
   returns True if the string consists only of letters and is not blank.
 isalnum()	
