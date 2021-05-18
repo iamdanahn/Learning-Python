@@ -1,6 +1,21 @@
 Exception - An error that occurs while a program is executing 
 Catching exceptions - The process of detecting these execution errors
 
+### hasttr() 
+- checks if an object has a certain property or method "under the hood"
+```py
+# Try a number - nothing will print out
+a = 321
+if hasattr(a, '__len__'):
+    print(len(a))
+
+# Try a string - the length will print out (4 in this case)
+b = "5555"
+if hasattr(b, '__len__'):
+    print(len(b))
+```
+
+### Try
 "try ... except" is similar to "if ... else"
 However, Try will attempt its block and if it errors, it will go to the exception and continue on. If no errors, exception is skipped.
 In the If block, if it crashes, the app crashes.
