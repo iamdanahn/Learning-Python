@@ -62,9 +62,9 @@
 # print(i)
 
 ## MEANING OF TRUTH IN PYTHON
-a = 1
-b = 1.0
-c = "1"
+# a = 1
+# b = 1.0
+# c = "1"
 
 # print(a == b) # True
 # print(a == c) # False
@@ -77,8 +77,29 @@ c = "1"
 # else:
 #   print("does not match")
 
-a = {}
-if (a):
-  print(f"{a} is true")
-else:
-  print(f"{a} is false")
+# a = {}
+# if (a):
+#   print(f"{a} is true")
+# else:
+#   print(f"{a} is false")
+
+
+## IDENTITY VS EQUALITY
+
+a = 1
+b = 1.0
+c = "1"
+
+# print(a == b)   # True
+# print(a is b)   # False. kinda acts like === triple equal
+# print(c == "1") # True
+# print(c is "1") # True. But SyntaxWarning: "is" with a literal. Did you mean "=="?
+
+# print(b == 1 and isinstance(b, int)) # False
+# # Checks, if b is an instance of an integer
+
+# print(a == 1 and isinstance(a, int)) # True
+
+print(a)
+print(float(a))
+print(str(a))

@@ -74,3 +74,4 @@ Meant to be one-liners. Multi-liners are HIGHLY discouraged
 JS version: `const toUpper = s => s.toUpperCase();`
 PY version: `toUpper = lambda s: s.upper()`
 
+const = lambda (arguements): arguments + methods

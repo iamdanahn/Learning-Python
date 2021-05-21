@@ -34,3 +34,10 @@ ALL objects are `true` unless one of the following:
   - {}
   - set()
   - range(0)
+
+
+# XOR Functions
+True  | True   ==> False
+True  | False  ==> True
+False | True  ==> True
+False | False ==> False
